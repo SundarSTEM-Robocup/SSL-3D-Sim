@@ -1,1 +1,0 @@
-/home/usman/Documents/codes/ros2_ws/build/ssl_robot/ament_cmake_environment_hooks/local_setup.zsh

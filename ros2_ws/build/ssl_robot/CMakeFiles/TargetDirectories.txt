@@ -1,9 +1,0 @@
-/home/usman/Documents/codes/ros2_ws/build/ssl_robot/CMakeFiles/uninstall.dir
-/home/usman/Documents/codes/ros2_ws/build/ssl_robot/CMakeFiles/ssl_robot_uninstall.dir
-/home/usman/Documents/codes/ros2_ws/build/ssl_robot/CMakeFiles/test.dir
-/home/usman/Documents/codes/ros2_ws/build/ssl_robot/CMakeFiles/edit_cache.dir
-/home/usman/Documents/codes/ros2_ws/build/ssl_robot/CMakeFiles/rebuild_cache.dir
-/home/usman/Documents/codes/ros2_ws/build/ssl_robot/CMakeFiles/list_install_components.dir
-/home/usman/Documents/codes/ros2_ws/build/ssl_robot/CMakeFiles/install.dir
-/home/usman/Documents/codes/ros2_ws/build/ssl_robot/CMakeFiles/install/local.dir
-/home/usman/Documents/codes/ros2_ws/build/ssl_robot/CMakeFiles/install/strip.dir
