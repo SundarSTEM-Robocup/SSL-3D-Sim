@@ -1,0 +1,61 @@
+[0.161s] Invoking command in '/home/usman/Documents/codes/ros2_ws/build/ssl_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/usman/Documents/codes/ros2_ws/src/ssl_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/usman/Documents/codes/ros2_ws/install/ssl_robot
+[1.499s] -- The C compiler identification is GNU 13.3.0
+[2.602s] -- The CXX compiler identification is GNU 13.3.0
+[2.781s] -- Detecting C compiler ABI info
+[4.299s] -- Detecting C compiler ABI info - done
+[4.484s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.491s] -- Detecting C compile features
+[4.507s] -- Detecting C compile features - done
+[4.629s] -- Detecting CXX compiler ABI info
+[6.079s] -- Detecting CXX compiler ABI info - done
+[6.339s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.352s] -- Detecting CXX compile features
+[6.364s] -- Detecting CXX compile features - done
+[6.532s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[7.960s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[9.282s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[10.014s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[10.877s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[11.114s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[11.430s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.711s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[12.985s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[13.045s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[14.264s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[14.394s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[14.646s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[16.190s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[18.494s] -- Configuring done (18.0s)
+[18.527s] -- Generating done (0.0s)
+[18.545s] -- Build files have been written to: /home/usman/Documents/codes/ros2_ws/build/ssl_robot
+[18.696s] Invoked command in '/home/usman/Documents/codes/ros2_ws/build/ssl_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/usman/Documents/codes/ros2_ws/src/ssl_robot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/usman/Documents/codes/ros2_ws/install/ssl_robot
+[18.713s] Invoking command in '/home/usman/Documents/codes/ros2_ws/build/ssl_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/usman/Documents/codes/ros2_ws/build/ssl_robot -- -j4 -l4
+[19.150s] Invoked command in '/home/usman/Documents/codes/ros2_ws/build/ssl_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/usman/Documents/codes/ros2_ws/build/ssl_robot -- -j4 -l4
+[19.329s] Invoking command in '/home/usman/Documents/codes/ros2_ws/build/ssl_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/usman/Documents/codes/ros2_ws/build/ssl_robot
+[19.442s] -- Install configuration: ""
+[19.446s] -- Execute custom install script
+[19.447s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/urdf/robot.urdf
+[19.590s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/meshes/base_link.STL
+[19.760s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/meshes/link_BL.STL
+[19.919s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/meshes/link_BR.STL
+[20.122s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/meshes/link_FL.STL
+[20.220s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/meshes/link_FR.STL
+[20.305s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/launch/simulation.launch.py
+[20.409s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/worlds/ssl_field.world
+[20.597s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/lib/ssl_robot/gui_controller.py
+[20.708s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ament_index/resource_index/package_run_dependencies/ssl_robot
+[20.815s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ament_index/resource_index/parent_prefix_path/ssl_robot
+[21.007s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/environment/ament_prefix_path.sh
+[21.136s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/environment/ament_prefix_path.dsv
+[21.296s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/environment/path.sh
+[21.456s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/environment/path.dsv
+[21.625s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/local_setup.bash
+[21.785s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/local_setup.sh
+[21.972s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/local_setup.zsh
+[22.128s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/local_setup.dsv
+[22.299s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/package.dsv
+[22.429s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ament_index/resource_index/packages/ssl_robot
+[22.614s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/cmake/ssl_robotConfig.cmake
+[22.757s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/cmake/ssl_robotConfig-version.cmake
+[22.919s] -- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/package.xml
+[23.095s] Invoked command in '/home/usman/Documents/codes/ros2_ws/build/ssl_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/usman/Documents/codes/ros2_ws/build/ssl_robot

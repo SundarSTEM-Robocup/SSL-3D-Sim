@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot">
+  
+  <!-- Dummy Root Link to Fix Orientation and Inertia Warning -->
+  <link name="base_footprint"/>
+  
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
+  </joint>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0709501209164898 -0.00944171317539863 -0.0138591971428879"
+        rpy="0 0 0" />
+      <mass
+        value="0.643917957153286" />
+      <inertia
+        ixx="0.00159513278982446"
+        ixy="-5.3907398972524E-07"
+        ixz="3.32407973462271E-07"
+        iyy="0.000721240615149605"
+        iyz="6.47236291823099E-05"
+        izz="0.000967776106961206" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ssl_robot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ssl_robot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_BR">
+    <inertial>
+      <origin
+        xyz="-0.00707911385864986 -7.6512400090864E-06 -1.29109554779447E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0331917400647206" />
+      <inertia
+        ixx="9.55696624878776E-06"
+        ixy="-1.90515102135698E-09"
+        ixz="-3.21484130464088E-09"
+        iyy="5.19797729581095E-06"
+        iyz="9.6120823578409E-10"
+        izz="5.19902962845603E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 -1.5708" />
+      <geometry>
+        <mesh
+          filename="package://ssl_robot/meshes/link_BR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 -1.5708" />
+      <geometry>
+        <mesh
+          filename="package://ssl_robot/meshes/link_BR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BR"
+    type="continuous">
+    <origin
+      xyz="0.0285 -0.09 -0.06"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_BR" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_BL">
+    <inertial>
+      <origin
+        xyz="-0.00707911349392855 1.38324678600997E-05 -5.81744539519813E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0331917385997145" />
+      <inertia
+        ixx="9.55696623805668E-06"
+        ixy="3.44423683591267E-09"
+        ixz="-1.44851795045358E-09"
+        iyy="5.19926986430586E-06"
+        iyz="-7.83297010628391E-10"
+        izz="5.19773688426401E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 1.5708" />
+      <geometry>
+        <mesh
+          filename="package://ssl_robot/meshes/link_BL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 1.5708" />
+      <geometry>
+        <mesh
+          filename="package://ssl_robot/meshes/link_BL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BL"
+    type="continuous">
+    <origin
+      xyz="0.0285 0.09 -0.06"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_BL" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_FR">
+    <inertial>
+      <origin
+        xyz="-0.00707911351794289 -9.51824495821693E-06 -1.16009881451426E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0331917386699706" />
+      <inertia
+        ixx="9.55696623904966E-06"
+        ixy="-2.37000341568062E-09"
+        ixz="-2.88860816281622E-09"
+        iyy="5.1982893301925E-06"
+        iyz="1.07482449487015E-09"
+        izz="5.19871742849256E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 -1.5708" />
+      <geometry>
+        <mesh
+          filename="package://ssl_robot/meshes/link_FR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 -1.5708" />
+      <geometry>
+        <mesh
+          filename="package://ssl_robot/meshes/link_FR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FR"
+    type="continuous">
+    <origin
+      xyz="0.0285 -0.09 0.06"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_FR" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link_FL">
+    <inertial>
+      <origin
+        xyz="-0.00707911346982092 -1.21450306019948E-05 -8.8135199976247E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0331917384702334" />
+      <inertia
+        ixx="9.55696623843143E-06"
+        ixy="-3.02406431536937E-09"
+        ixz="-2.19454048380685E-09"
+        iyy="5.19884322098355E-06"
+        iyz="1.04190348167732E-09"
+        izz="5.19816352274794E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 1.5708" />
+      <geometry>
+        <mesh
+          filename="package://ssl_robot/meshes/link_FL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 1.5708" />
+      <geometry>
+        <mesh
+          filename="package://ssl_robot/meshes/link_FL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FL"
+    type="continuous">
+    <origin
+      xyz="0.0285 0.09 0.06"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_FL" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+
+  <gazebo>
+    <plugin filename="gz-sim-mecanum-drive-system" name="gz::sim::systems::MecanumDrive">
+      <front_left_joint>joint_FL</front_left_joint>
+      <front_right_joint>joint_FR</front_right_joint>
+      <back_left_joint>joint_BL</back_left_joint>
+      <back_right_joint>joint_BR</back_right_joint>
+      <wheel_separation>0.18</wheel_separation>
+      <wheelbase>0.18</wheelbase>
+      <wheel_radius>0.03</wheel_radius>
+      <topic>cmd_vel</topic>
+      <odom_topic>odom</odom_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_footprint</child_frame_id>
+    </plugin>
+  </gazebo>
+</robot>

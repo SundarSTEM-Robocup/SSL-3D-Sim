@@ -1,0 +1,557 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="soccer_field">
+    
+    <!-- Global light -->
+    <light name="sun" type="directional">
+      <pose>0 0 10 0 0 0</pose>
+      <direction>0 0 -1</direction>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>0.5 0.5 0.5 1</specular>
+      <cast_shadows>true</cast_shadows>
+    </light>
+    <!-- Soccer Field -->
+    <model name="soccer_field">
+      <static>true</static>
+      <link name="field">
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>17.635 11.755</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0 1 0 1</ambient>
+            <diffuse>0 1 0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>17.635 11.755</size>
+            </plane>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Lines -->
+    <model name="centerPassingLine1">
+      <static>true</static>
+      <pose>0 0 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.05 10.575 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="centerPassingLine2">
+      <static>true</static>
+      <pose>0 0 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>16.455 0.05 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="leftPenaltyHorizontalLine1">
+      <static>true</static>
+      <pose>-7.2475 1.96 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.96 0.05 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="leftPenaltyHorizontalLine2">
+      <static>true</static>
+      <pose>-7.2475 -1.96 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.96 0.05 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="leftPenaltyVerticalLine">
+      <static>true</static>
+      <pose>-6.2675 0 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.05 3.92 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rightPenaltyHorizontalLine1">
+      <static>true</static>
+      <pose>7.2475 1.96 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.96 0.05 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rightPenaltyHorizontalLine2">
+      <static>true</static>
+      <pose>7.2475 -1.96 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.96 0.05 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rightPenaltyVerticalLine">
+      <static>true</static>
+      <pose>6.2675 0 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.05 3.92 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+    <model name="BoundaryHorizontalLine1">
+      <static>true</static>
+      <pose>0 5.2875 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>16.455 0.05 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="BoundaryHorizontalLine2">
+      <static>true</static>
+      <pose>0 -5.2875 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>16.455 0.05 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="BoundaryVerticalLine1">
+      <static>true</static>
+      <pose>8.2275 0 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.05 10.575 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="BoundaryVerticalLine2">
+      <static>true</static>
+      <pose>-8.2275 0 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.05 10.575 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+<model name="FrameHorizontalLine1">
+      <static>true</static>
+      <pose>0 5.8775 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>17.635 0.05 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="FrameHorizontalLine2">
+      <static>true</static>
+      <pose>0 -5.8775 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>17.635 0.05 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="FrameVerticalLine1">
+      <static>true</static>
+      <pose>8.8175 0 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.05 11.755 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="FrameVerticalLine2">
+      <static>true</static>
+      <pose>-8.8175 0 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.05 11.755 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="leftGoalPenaltyMark">
+      <static>true</static>
+      <pose>-7.0525 0 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+          <cylinder>
+            <radius>0.05</radius>
+            <length>0.001</length>
+          </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="rightGoalPenaltyMark">
+      <static>true</static>
+      <pose>7.0525 0 -0.0004 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+          <cylinder>
+            <radius>0.05</radius>
+            <length>0.001</length>
+          </cylinder>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Goals -->
+    <model name="goal_blue">
+    <static>true</static>
+      <pose>8.405 0 0.1575 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.355 1.96 0.315</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="goal_red">
+    <static>true</static>
+      <pose>-8.405 0 0.1575 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.355 1.96 0.315</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Soccer Ball -->
+    <model name="soccer_ball">
+      <pose>0 0 0.11 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <sphere>
+              <radius>0.11</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <sphere>
+              <radius>0.11</radius>
+            </sphere>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="center_circumference">
+      <static>true</static>
+      <link name="link">
+        <visual name="seg_0">
+          <pose>0.980000 0.000000 -0.0004 0 0 1.570796</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_1">
+          <pose>0.946515 0.253520 -0.0004 0 0 1.832596</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_2">
+          <pose>0.848195 0.490000 -0.0004 0 0 2.094395</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_3">
+          <pose>0.692800 0.692800 -0.0004 0 0 2.356194</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_4">
+          <pose>0.490000 0.848195 -0.0004 0 0 2.617994</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_5">
+          <pose>0.253520 0.946515 -0.0004 0 0 2.879793</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_6">
+          <pose>0.000000 0.980000 -0.0004 0 0 3.141593</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_7">
+          <pose>-0.253520 0.946515 -0.0004 0 0 3.403392</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_8">
+          <pose>-0.490000 0.848195 -0.0004 0 0 3.665191</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_9">
+          <pose>-0.692800 0.692800 -0.0004 0 0 3.926991</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_10">
+          <pose>-0.848195 0.490000 -0.0004 0 0 4.188790</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_11">
+          <pose>-0.946515 0.253520 -0.0004 0 0 4.450590</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_12">
+          <pose>-0.980000 0.000000 -0.0004 0 0 4.712389</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_13">
+          <pose>-0.946515 -0.253520 -0.0004 0 0 4.974188</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_14">
+          <pose>-0.848195 -0.490000 -0.0004 0 0 5.235988</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_15">
+          <pose>-0.692800 -0.692800 -0.0004 0 0 5.497787</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_16">
+          <pose>-0.490000 -0.848195 -0.0004 0 0 5.759586</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_17">
+          <pose>-0.253520 -0.946515 -0.0004 0 0 6.021385</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_18">
+          <pose>0.000000 -0.980000 -0.0004 0 0 6.283185</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_19">
+          <pose>0.253520 -0.946515 -0.0004 0 0 0.261799</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_20">
+          <pose>0.490000 -0.848195 -0.0004 0 0 0.523599</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_21">
+          <pose>0.692800 -0.692800 -0.0004 0 0 0.785398</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_22">
+          <pose>0.848195 -0.490000 -0.0004 0 0 1.047198</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+        <visual name="seg_23">
+          <pose>0.946515 -0.253520 -0.0004 0 0 1.308997</pose>
+          <geometry><box><size>0.2695 0.05000 0.00100</size></box></geometry>
+          <material><diffuse>1 1 1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>

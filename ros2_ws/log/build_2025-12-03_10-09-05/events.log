@@ -1,0 +1,296 @@
+[0.000000] (-) TimerEvent: {}
+[0.001283] (ssl_robot) JobQueued: {'identifier': 'ssl_robot', 'dependencies': OrderedDict()}
+[0.001905] (ssl_robot) JobStarted: {'identifier': 'ssl_robot'}
+[0.118910] (-) TimerEvent: {}
+[0.152753] (ssl_robot) JobProgress: {'identifier': 'ssl_robot', 'progress': 'cmake'}
+[0.157659] (ssl_robot) Command: {'cmd': ['/usr/bin/cmake', '/home/usman/Documents/codes/ros2_ws/src/ssl_robot', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/usman/Documents/codes/ros2_ws/install/ssl_robot'], 'cwd': '/home/usman/Documents/codes/ros2_ws/build/ssl_robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'usman', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/usman', 'OLDPWD': '/home/usman/Documents/codes', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '30821', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/usman/Documents/codes/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'usman', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'usman', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/usr/share/gazebo-8/models:/home/usman/Documents/ssl/src/soccer_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/usman/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/usman/.local/share/JetBrains/Toolbox/scripts', 'SESSION_MANAGER': 'local/ABC:@/tmp/.ICE-unix/30784,unix/ABC:/tmp/.ICE-unix/30784', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/dev/null', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/75e0c0fb_93a1_4373_a5fa_659cb6473622', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.C6WKG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/usman/Documents/codes/ros2_ws/install/ssl_robot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'RMW_FASTRTPS_USE_QOS_FROM_XML': '0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/usman/Documents/codes/ros2_ws/build/ssl_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/usman/Documents/codes/ros2_ws/install/ssl_robot:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.219167] (-) TimerEvent: {}
+[0.326382] (-) TimerEvent: {}
+[0.427095] (-) TimerEvent: {}
+[0.527697] (-) TimerEvent: {}
+[0.629931] (-) TimerEvent: {}
+[0.733591] (-) TimerEvent: {}
+[0.834366] (-) TimerEvent: {}
+[0.938094] (-) TimerEvent: {}
+[1.039913] (-) TimerEvent: {}
+[1.144279] (-) TimerEvent: {}
+[1.245705] (-) TimerEvent: {}
+[1.349052] (-) TimerEvent: {}
+[1.450984] (-) TimerEvent: {}
+[1.500086] (ssl_robot) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.552109] (-) TimerEvent: {}
+[1.653976] (-) TimerEvent: {}
+[1.758187] (-) TimerEvent: {}
+[1.858714] (-) TimerEvent: {}
+[1.969476] (-) TimerEvent: {}
+[2.069961] (-) TimerEvent: {}
+[2.170518] (-) TimerEvent: {}
+[2.271011] (-) TimerEvent: {}
+[2.371474] (-) TimerEvent: {}
+[2.476082] (-) TimerEvent: {}
+[2.577485] (-) TimerEvent: {}
+[2.603554] (ssl_robot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[2.677633] (-) TimerEvent: {}
+[2.781917] (-) TimerEvent: {}
+[2.782599] (ssl_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.883155] (-) TimerEvent: {}
+[2.983717] (-) TimerEvent: {}
+[3.088127] (-) TimerEvent: {}
+[3.190202] (-) TimerEvent: {}
+[3.292908] (-) TimerEvent: {}
+[3.393401] (-) TimerEvent: {}
+[3.497144] (-) TimerEvent: {}
+[3.598264] (-) TimerEvent: {}
+[3.709118] (-) TimerEvent: {}
+[3.814696] (-) TimerEvent: {}
+[3.918329] (-) TimerEvent: {}
+[4.025272] (-) TimerEvent: {}
+[4.128276] (-) TimerEvent: {}
+[4.231529] (-) TimerEvent: {}
+[4.301016] (ssl_robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.332507] (-) TimerEvent: {}
+[4.436604] (-) TimerEvent: {}
+[4.485088] (ssl_robot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.492892] (ssl_robot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.507180] (ssl_robot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.540589] (-) TimerEvent: {}
+[4.630720] (ssl_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.644900] (-) TimerEvent: {}
+[4.745756] (-) TimerEvent: {}
+[4.852151] (-) TimerEvent: {}
+[4.953909] (-) TimerEvent: {}
+[5.062284] (-) TimerEvent: {}
+[5.163820] (-) TimerEvent: {}
+[5.265680] (-) TimerEvent: {}
+[5.368155] (-) TimerEvent: {}
+[5.469194] (-) TimerEvent: {}
+[5.569633] (-) TimerEvent: {}
+[5.674758] (-) TimerEvent: {}
+[5.777929] (-) TimerEvent: {}
+[5.879117] (-) TimerEvent: {}
+[5.979968] (-) TimerEvent: {}
+[6.080695] (ssl_robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.081279] (-) TimerEvent: {}
+[6.190873] (-) TimerEvent: {}
+[6.305947] (-) TimerEvent: {}
+[6.340896] (ssl_robot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.352058] (ssl_robot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.365730] (ssl_robot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.409876] (-) TimerEvent: {}
+[6.510474] (-) TimerEvent: {}
+[6.533832] (ssl_robot) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[6.611371] (-) TimerEvent: {}
+[6.715672] (-) TimerEvent: {}
+[6.821947] (-) TimerEvent: {}
+[6.923859] (-) TimerEvent: {}
+[7.025448] (-) TimerEvent: {}
+[7.128655] (-) TimerEvent: {}
+[7.233102] (-) TimerEvent: {}
+[7.333721] (-) TimerEvent: {}
+[7.437521] (-) TimerEvent: {}
+[7.548136] (-) TimerEvent: {}
+[7.651514] (-) TimerEvent: {}
+[7.752434] (-) TimerEvent: {}
+[7.857058] (-) TimerEvent: {}
+[7.960218] (-) TimerEvent: {}
+[7.961132] (ssl_robot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[8.064876] (-) TimerEvent: {}
+[8.165546] (-) TimerEvent: {}
+[8.266747] (-) TimerEvent: {}
+[8.373914] (-) TimerEvent: {}
+[8.474462] (-) TimerEvent: {}
+[8.575259] (-) TimerEvent: {}
+[8.683570] (-) TimerEvent: {}
+[8.784998] (-) TimerEvent: {}
+[8.888742] (-) TimerEvent: {}
+[8.989379] (-) TimerEvent: {}
+[9.092214] (-) TimerEvent: {}
+[9.196065] (-) TimerEvent: {}
+[9.283083] (ssl_robot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[9.296902] (-) TimerEvent: {}
+[9.401050] (-) TimerEvent: {}
+[9.502829] (-) TimerEvent: {}
+[9.608144] (-) TimerEvent: {}
+[9.712033] (-) TimerEvent: {}
+[9.815909] (-) TimerEvent: {}
+[9.919236] (-) TimerEvent: {}
+[10.016148] (ssl_robot) StdoutLine: {'line': b'-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[10.019539] (-) TimerEvent: {}
+[10.124082] (-) TimerEvent: {}
+[10.225556] (-) TimerEvent: {}
+[10.334820] (-) TimerEvent: {}
+[10.440226] (-) TimerEvent: {}
+[10.550554] (-) TimerEvent: {}
+[10.651694] (-) TimerEvent: {}
+[10.752767] (-) TimerEvent: {}
+[10.855877] (-) TimerEvent: {}
+[10.878945] (ssl_robot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[10.961092] (-) TimerEvent: {}
+[11.062720] (-) TimerEvent: {}
+[11.115356] (ssl_robot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[11.162896] (-) TimerEvent: {}
+[11.263986] (-) TimerEvent: {}
+[11.369651] (-) TimerEvent: {}
+[11.431974] (ssl_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.470906] (-) TimerEvent: {}
+[11.571658] (-) TimerEvent: {}
+[11.678272] (-) TimerEvent: {}
+[11.712892] (ssl_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.778419] (-) TimerEvent: {}
+[11.880963] (-) TimerEvent: {}
+[11.981468] (-) TimerEvent: {}
+[12.082174] (-) TimerEvent: {}
+[12.185589] (-) TimerEvent: {}
+[12.289086] (-) TimerEvent: {}
+[12.389675] (-) TimerEvent: {}
+[12.492123] (-) TimerEvent: {}
+[12.592613] (-) TimerEvent: {}
+[12.698139] (-) TimerEvent: {}
+[12.800870] (-) TimerEvent: {}
+[12.906887] (-) TimerEvent: {}
+[12.986239] (ssl_robot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[13.007204] (-) TimerEvent: {}
+[13.044998] (ssl_robot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[13.109255] (-) TimerEvent: {}
+[13.211151] (-) TimerEvent: {}
+[13.313390] (-) TimerEvent: {}
+[13.415291] (-) TimerEvent: {}
+[13.516995] (-) TimerEvent: {}
+[13.623116] (-) TimerEvent: {}
+[13.724896] (-) TimerEvent: {}
+[13.825436] (-) TimerEvent: {}
+[13.928480] (-) TimerEvent: {}
+[14.028975] (-) TimerEvent: {}
+[14.129681] (-) TimerEvent: {}
+[14.234067] (-) TimerEvent: {}
+[14.266002] (ssl_robot) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[14.334212] (-) TimerEvent: {}
+[14.395114] (ssl_robot) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[14.434892] (-) TimerEvent: {}
+[14.538956] (-) TimerEvent: {}
+[14.640002] (-) TimerEvent: {}
+[14.647386] (ssl_robot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[14.740139] (-) TimerEvent: {}
+[14.840626] (-) TimerEvent: {}
+[14.944456] (-) TimerEvent: {}
+[15.045293] (-) TimerEvent: {}
+[15.150914] (-) TimerEvent: {}
+[15.252113] (-) TimerEvent: {}
+[15.352747] (-) TimerEvent: {}
+[15.455990] (-) TimerEvent: {}
+[15.556767] (-) TimerEvent: {}
+[15.657466] (-) TimerEvent: {}
+[15.758472] (-) TimerEvent: {}
+[15.863022] (-) TimerEvent: {}
+[15.965762] (-) TimerEvent: {}
+[16.066407] (-) TimerEvent: {}
+[16.167290] (-) TimerEvent: {}
+[16.191987] (ssl_robot) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[16.268327] (-) TimerEvent: {}
+[16.370719] (-) TimerEvent: {}
+[16.474825] (-) TimerEvent: {}
+[16.575874] (-) TimerEvent: {}
+[16.676905] (-) TimerEvent: {}
+[16.778614] (-) TimerEvent: {}
+[16.882896] (-) TimerEvent: {}
+[16.985499] (-) TimerEvent: {}
+[17.086054] (-) TimerEvent: {}
+[17.187176] (-) TimerEvent: {}
+[17.292024] (-) TimerEvent: {}
+[17.392773] (-) TimerEvent: {}
+[17.499501] (-) TimerEvent: {}
+[17.601565] (-) TimerEvent: {}
+[17.706460] (-) TimerEvent: {}
+[17.810122] (-) TimerEvent: {}
+[17.911572] (-) TimerEvent: {}
+[18.014092] (-) TimerEvent: {}
+[18.119894] (-) TimerEvent: {}
+[18.222774] (-) TimerEvent: {}
+[18.326881] (-) TimerEvent: {}
+[18.427453] (-) TimerEvent: {}
+[18.495503] (ssl_robot) StdoutLine: {'line': b'-- Configuring done (18.0s)\n'}
+[18.527635] (ssl_robot) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[18.528597] (-) TimerEvent: {}
+[18.546157] (ssl_robot) StdoutLine: {'line': b'-- Build files have been written to: /home/usman/Documents/codes/ros2_ws/build/ssl_robot\n'}
+[18.630904] (-) TimerEvent: {}
+[18.697191] (ssl_robot) CommandEnded: {'returncode': 0}
+[18.698914] (ssl_robot) JobProgress: {'identifier': 'ssl_robot', 'progress': 'build'}
+[18.713913] (ssl_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/usman/Documents/codes/ros2_ws/build/ssl_robot', '--', '-j4', '-l4'], 'cwd': '/home/usman/Documents/codes/ros2_ws/build/ssl_robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'usman', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/usman', 'OLDPWD': '/home/usman/Documents/codes', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '30821', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/usman/Documents/codes/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'usman', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'usman', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/usr/share/gazebo-8/models:/home/usman/Documents/ssl/src/soccer_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/usman/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/usman/.local/share/JetBrains/Toolbox/scripts', 'SESSION_MANAGER': 'local/ABC:@/tmp/.ICE-unix/30784,unix/ABC:/tmp/.ICE-unix/30784', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/dev/null', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/75e0c0fb_93a1_4373_a5fa_659cb6473622', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.C6WKG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/usman/Documents/codes/ros2_ws/install/ssl_robot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'RMW_FASTRTPS_USE_QOS_FROM_XML': '0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/usman/Documents/codes/ros2_ws/build/ssl_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/usman/Documents/codes/ros2_ws/install/ssl_robot:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[18.734021] (-) TimerEvent: {}
+[18.841000] (-) TimerEvent: {}
+[18.943925] (-) TimerEvent: {}
+[19.045900] (-) TimerEvent: {}
+[19.149209] (ssl_robot) CommandEnded: {'returncode': 0}
+[19.152521] (-) TimerEvent: {}
+[19.157340] (ssl_robot) JobProgress: {'identifier': 'ssl_robot', 'progress': 'install'}
+[19.253969] (-) TimerEvent: {}
+[19.326322] (ssl_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/usman/Documents/codes/ros2_ws/build/ssl_robot'], 'cwd': '/home/usman/Documents/codes/ros2_ws/build/ssl_robot', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'usman', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/usman', 'OLDPWD': '/home/usman/Documents/codes', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '30821', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/usman/Documents/codes/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'usman', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'usman', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/usr/share/gazebo-8/models:/home/usman/Documents/ssl/src/soccer_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/usman/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/usman/.local/share/JetBrains/Toolbox/scripts', 'SESSION_MANAGER': 'local/ABC:@/tmp/.ICE-unix/30784,unix/ABC:/tmp/.ICE-unix/30784', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/dev/null', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/75e0c0fb_93a1_4373_a5fa_659cb6473622', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.C6WKG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/usman/Documents/codes/ros2_ws/install/ssl_robot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'RMW_FASTRTPS_USE_QOS_FROM_XML': '0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/usman/Documents/codes/ros2_ws/build/ssl_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/usman/Documents/codes/ros2_ws/install/ssl_robot:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[19.358140] (-) TimerEvent: {}
+[19.443520] (ssl_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.447666] (ssl_robot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[19.448461] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/urdf/robot.urdf\n'}
+[19.459337] (-) TimerEvent: {}
+[19.561061] (-) TimerEvent: {}
+[19.581547] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/meshes/base_link.STL\n'}
+[19.661194] (-) TimerEvent: {}
+[19.761897] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/meshes/link_BL.STL\n'}
+[19.762466] (-) TimerEvent: {}
+[19.870271] (-) TimerEvent: {}
+[19.920001] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/meshes/link_BR.STL\n'}
+[19.972140] (-) TimerEvent: {}
+[20.074594] (-) TimerEvent: {}
+[20.122153] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/meshes/link_FL.STL\n'}
+[20.178675] (-) TimerEvent: {}
+[20.221263] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/meshes/link_FR.STL\n'}
+[20.280597] (-) TimerEvent: {}
+[20.306522] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/launch/simulation.launch.py\n'}
+[20.384147] (-) TimerEvent: {}
+[20.409574] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/worlds/ssl_field.world\n'}
+[20.486723] (-) TimerEvent: {}
+[20.589045] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/lib/ssl_robot/gui_controller.py\n'}
+[20.599295] (-) TimerEvent: {}
+[20.701022] (-) TimerEvent: {}
+[20.709023] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ament_index/resource_index/package_run_dependencies/ssl_robot\n'}
+[20.802465] (-) TimerEvent: {}
+[20.816339] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ament_index/resource_index/parent_prefix_path/ssl_robot\n'}
+[20.905225] (-) TimerEvent: {}
+[21.008902] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/environment/ament_prefix_path.sh\n'}
+[21.009459] (-) TimerEvent: {}
+[21.112984] (-) TimerEvent: {}
+[21.137622] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/environment/ament_prefix_path.dsv\n'}
+[21.219327] (-) TimerEvent: {}
+[21.297446] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/environment/path.sh\n'}
+[21.320898] (-) TimerEvent: {}
+[21.426613] (-) TimerEvent: {}
+[21.457130] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/environment/path.dsv\n'}
+[21.531187] (-) TimerEvent: {}
+[21.626339] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/local_setup.bash\n'}
+[21.631409] (-) TimerEvent: {}
+[21.734725] (-) TimerEvent: {}
+[21.785397] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/local_setup.sh\n'}
+[21.836624] (-) TimerEvent: {}
+[21.939395] (-) TimerEvent: {}
+[21.973919] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/local_setup.zsh\n'}
+[22.039941] (-) TimerEvent: {}
+[22.129372] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/local_setup.dsv\n'}
+[22.145905] (-) TimerEvent: {}
+[22.251375] (-) TimerEvent: {}
+[22.300607] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/package.dsv\n'}
+[22.352883] (-) TimerEvent: {}
+[22.430178] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ament_index/resource_index/packages/ssl_robot\n'}
+[22.454941] (-) TimerEvent: {}
+[22.561294] (-) TimerEvent: {}
+[22.615509] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/cmake/ssl_robotConfig.cmake\n'}
+[22.666256] (-) TimerEvent: {}
+[22.758710] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/cmake/ssl_robotConfig-version.cmake\n'}
+[22.767441] (-) TimerEvent: {}
+[22.871986] (-) TimerEvent: {}
+[22.920927] (ssl_robot) StdoutLine: {'line': b'-- Symlinking: /home/usman/Documents/codes/ros2_ws/install/ssl_robot/share/ssl_robot/package.xml\n'}
+[22.974667] (-) TimerEvent: {}
+[23.076923] (-) TimerEvent: {}
+[23.096006] (ssl_robot) CommandEnded: {'returncode': 0}
+[23.185917] (-) TimerEvent: {}
+[23.302720] (-) TimerEvent: {}
+[23.418608] (-) TimerEvent: {}
+[23.478241] (ssl_robot) JobEnded: {'identifier': 'ssl_robot', 'rc': 0}
+[23.485164] (-) EventReactorShutdown: {}
