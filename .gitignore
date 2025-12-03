@@ -1,0 +1,35 @@
+# Build folders
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
+
+# VSCode settings
+.vscode/
+.idea/
+
+# Qt generated files
+moc_*
+qrc_*
+*.qrc.dep
+*.qmlc
+*.jsc
+
+# Object & binary files
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.a
+*.lib
+
+# Logs
+*.log
+
+# OS stuff
+.DS_Store
+Thumbs.db
