@@ -1,8 +1,7 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, ExecuteProcess, RegisterEventHandler, AppendEnvironmentVariable
-from launch.event_handlers import OnProcessExit
+from launch.actions import IncludeLaunchDescription, AppendEnvironmentVariable
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 
@@ -11,7 +10,6 @@ def generate_launch_description():
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
     
     # Append to GZ_SIM_RESOURCE_PATH
-    # We need to go one level up from pkg_ssl_robot to get to 'share'
     install_share_dir = os.path.join(pkg_ssl_robot, '..')
     
     set_resource_path = AppendEnvironmentVariable(
@@ -52,7 +50,13 @@ def generate_launch_description():
     spawn_entity = Node(
         package='ros_gz_sim',
         executable='create',
-        arguments=['-name', 'ssl_robot', '-topic', 'robot_description', '-x' , '0.5' , '-y' , '0.0' , '-z', '0.1'],
+        arguments=[
+            '-name', 'ssl_robot',
+            '-topic', 'robot_description',
+            '-x', '0.5',
+            '-y', '0.0',
+            '-z', '0.4'  # increased to match 4x scaled robot
+        ],
         output='screen'
     )
 
