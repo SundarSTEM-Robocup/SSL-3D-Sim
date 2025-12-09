@@ -59,11 +59,17 @@
     </collision>
   </link>
 
-  <joint name="joint_BR" type="continuous">
-    <origin xyz="0.114  -0.36  -0.24" rpy="0 0 0"/>
-    <parent link="base_link"/>
-    <child link="link_BR"/>
-    <axis xyz="0 1 0"/>
+  <joint
+    name="joint_BR"
+    type="continuous">
+      <origin xyz="0.11404 -0.368148 -0.19484" rpy="-1.571882827 2.114076334 -1.5708"/>
+
+    <parent
+      link="base_link" />
+    <child
+      link="link_BR" />
+    <axis
+      xyz="0 -1 0" />
   </joint>
 
   <!-- Back Left Wheel -->
@@ -91,11 +97,16 @@
     </collision>
   </link>
 
-  <joint name="joint_BL" type="continuous">
-    <origin xyz="0.114 0.36 -0.24" rpy="0 0 0"/>
-    <parent link="base_link"/>
-    <child link="link_BL"/>
-    <axis xyz="0 1 0"/>
+ <joint
+    name="joint_BL"
+    type="continuous">
+    <origin xyz="0.114048 0.186124 -0.33176" rpy="1.569003673 2.598396327 1.5708"/> 
+    <parent
+      link="base_link" />
+    <child
+      link="link_BL" />
+    <axis
+      xyz="0 -1 0" />
   </joint>
 
   <!-- Front Right Wheel -->
@@ -123,11 +134,17 @@
     </collision>
   </link>
 
-  <joint name="joint_FR" type="continuous">
-    <origin xyz="0.114 -0.36 0.24" rpy="0 0 0"/>
-    <parent link="base_link"/>
-    <child link="link_FR"/>
-    <axis xyz="0 1 0"/>
+  <joint
+    name="joint_FR"
+    type="continuous">
+    <origin xyz="0.114048 -0.313024 0.29426" rpy="1.572253127 -2.336636327 -1.5708"/>
+
+    <parent
+      link="base_link" />
+    <child
+      link="link_FR" />
+    <axis
+      xyz="0 -1 0" />
   </joint>
 
   <!-- Front Left Wheel -->
@@ -155,11 +172,17 @@
     </collision>
   </link>
 
-  <joint name="joint_FL" type="continuous">
-    <origin xyz="0.114 0.36 0.24" rpy="0 0 0"/>
-    <parent link="base_link"/>
-    <child link="link_FL"/>
-    <axis xyz="0 1 0"/>
+  <joint
+    name="joint_FL"
+    type="continuous">
+    <origin xyz="0.114048 0.365324 0.12592" rpy="-1.570203673 4.431038981 1.5708"/>  
+
+    <parent
+      link="base_link" />
+    <child
+      link="link_FL" />
+    <axis
+      xyz="0 -1 0" />
   </joint>
 
   <gazebo>
@@ -179,3 +202,4 @@
   </gazebo>
 
 </robot>
+
